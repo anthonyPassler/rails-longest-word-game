@@ -1,0 +1,11 @@
+<h1>Result</h1>
+
+<% if !@included %>
+  <p>Sorry but <strong><%= @guess %></strong> can't be built out of <%= @letters %> </p>
+  <% elsif !@english %>
+  <p>Sorry but <strong><%= @guess %></strong> does not seem to be an English word</p>
+  <% else %>
+  <p><strong>Congratulations!</strong> <%= @guess %> is a valid English word!</p>
+<% end %>
+
+<%= link_to "Play again!", new_path %>

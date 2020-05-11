@@ -1,0 +1,54 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Patua+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 450px;
+  text-align: center;
+}
+.letter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.letter-box {
+  width: 30px;
+  font-family: 'Patua One', cursive;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  background-color: #0F80FF;
+}
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.play-form {
+  display: flex;
+  margin-top: 10px;
+}
+.play-input {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+}
+.play-submit, a {
+  padding: 8px;
+  color: white;
+  background-color: #8000FF;
+  border-radius: 8px;
+  &:hover {
+    background-color: #CC66FF;
+  }
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
